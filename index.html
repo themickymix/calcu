@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+ <main class="main">
+    <div class="pababa">
+        <div class="pahaba">
+            <div class="input-group flex-nowrap">
+                <input type="text" id="myInput" placeholder="0" readonly>
+            </div>
+        </div>
+        <div class="pahaba">
+            <button type="button" class="btn btn-dark" onclick="clearInput()">AC</button>
+            <button type="button" class="btn btn-dark" onclick="deleteLast()">X</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('%')">%</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('/')">÷</button>
+        </div>
+        <div class="pahaba">
+            <button type="button" class="btn btn-dark" onclick="appendValue('7')">7</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('8')">8</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('9')">9</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('*')">*</button>
+        </div>
+        <div class="pahaba">
+            <button type="button" class="btn btn-dark" onclick="appendValue('4')">4</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('5')">5</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('6')">6</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('-')">-</button>
+        </div>
+        <div class="pahaba">
+            <button type="button" class="btn btn-dark" onclick="appendValue('1')">1</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('2')">2</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('3')">3</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('+')">+</button>
+        </div>
+        <div class="pahaba">
+            <button type="button" class="btn btn-dark" onclick="appendValue('0')">0</button>
+            <button type="button" class="btn btn-dark" onclick="appendValue('.')">.</button>
+            <button type="button" class="btn btn-dark" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+</main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

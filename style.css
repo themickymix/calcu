@@ -1,0 +1,19 @@
+.main {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.pahaba{
+    display: flex;
+    gap: 2rem;
+}
+.pababa{
+    display: grid;
+    gap: 2rem;
+}
+.btn{
+    height: 50px;
+    width: 50px;
+}
